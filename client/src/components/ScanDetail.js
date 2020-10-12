@@ -28,8 +28,9 @@ class ScanDetail extends React.Component {
     }
 
     getHeaders = () => {
-        let columns = this.state.repos;
-        return (<ColumnHeader headerValues={columns} />);
+
+        let cols=['Repository','Status','Findings','time']
+        return (<ColumnHeader colConfig={cols} />);
     };
 
     handleOnClick = (id) => {

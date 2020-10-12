@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import InfoTwoToneIcon from '@material-ui/icons/InfoTwoTone';
 
 class Header extends React.Component {
@@ -9,8 +9,7 @@ class Header extends React.Component {
     }
 
     onHelpCLick = () => {
-        // this.props.dispatch(push('/m/p/a/contact'))
-        //this.props.dispatch(push('/m/p/a/helpPage'))
+        
     }
 
     render() {
@@ -25,9 +24,9 @@ class Header extends React.Component {
                         <img  alt='Security Scan' />
                     </div>
                     <div>
-                        {/* <img onClick={this.onHelpCLick} style={{height:35, width:35}} src='/media/call_icon.png' alt='logout btn' /> */}
+                        
                         <InfoTwoToneIcon onClick={this.onHelpCLick} 
-                        // fontSize="large" style={{color: "#abadac", cursor: "pointer"}}
+                        
                         />
                     </div>
                 
