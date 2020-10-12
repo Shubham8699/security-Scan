@@ -1,8 +1,7 @@
 import React from 'react'
 import TableCell from '@material-ui/core/TableCell'
 import { Label } from 'semantic-ui-react'
-import FinalPage from './FinalPage';
-//import {withStyles} from '@material-ui/core/styles'
+import { Button } from '@material-ui/core';
 
 class DetailTable extends React.Component {
 
@@ -25,7 +24,6 @@ class DetailTable extends React.Component {
     }
 
     handleClick = (id) => {
-
         this.props.onRepoClick(id)
         // this.setState({id:id})
     }
@@ -45,14 +43,14 @@ class DetailTable extends React.Component {
 
 
         return (<React.Fragment >
-            <TableCell onClick={() => { this.handleClick(data["data"].id) }} >
+            <TableCell  >
                 {data["data"].repositoryName}
             </TableCell>
             <TableCell>
                 {data["data"].status}
             </TableCell>
             <TableCell>
-                <Label > {data["data"].findings.type} </Label>
+            <Button>   <Label onClick={() => { this.handleClick(data["data"].id) }}> {data["data"].findings.type} </Label></Button> 
             </TableCell>
             <TableCell>
                 {time}

@@ -13,16 +13,14 @@ class ColumnHeader extends React.Component {
     };
 
         getHeaders = (props) => {
-            console.log(this.props)
+           
         return(
             <>
-          <TableCell> <Label>Repository</Label></TableCell>
-          <TableCell> <Label>Status</Label></TableCell>
-          <TableCell> <Label>Findings</Label></TableCell>
-          <TableCell> <Label>Repository</Label></TableCell>
-           {/* <Label>Status</Label>
-           <Label>Findings</Label>
-            <Label>time</Label>*/}
+          <TableCell> <Label>{this.props.colConfig[0]}</Label></TableCell>
+          <TableCell> <Label>{this.props.colConfig[1]}</Label></TableCell>
+          <TableCell> <Label>{this.props.colConfig[2]}</Label></TableCell>
+          <TableCell> <Label>{this.props.colConfig[3]}</Label></TableCell>
+           
             </> 
         )
     };

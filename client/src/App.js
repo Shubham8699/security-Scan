@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './components/Header'
-import ScanDetail from './components/ScanDetail'
+import ScanForm from './components/ScanForm'
 
 function App() {
   return (
     <div >
-      <Header/>      
-      <ScanDetail/>
+      <Header/>
+      <ScanForm/>
     </div>
   );
 }
